@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace VehicleApp.Model.Common
 {
-    public class Class1
+    public interface IVehicleMake
     {
+        Guid Id { get; set; }
+        string Name { get; set; }
+        string Abrv {  get; set; }
     }
 }

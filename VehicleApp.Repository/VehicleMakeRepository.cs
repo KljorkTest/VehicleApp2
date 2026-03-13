@@ -7,6 +7,7 @@ using VehicleApp.DAL;
 using VehicleApp.Repository.Common;
 using VehicleApp.Common;
 using System.Data.Entity;
+using Common.Exceptions;
 
 namespace VehicleApp.Repository
 {
@@ -14,8 +15,7 @@ namespace VehicleApp.Repository
     {
         public VehicleMakeRepository(VehicleDbContext context)
             : base(context)
-        {
-        }
+        { }
 
         public async Task<IEnumerable<VehicleMakeEntity>> GetAsync(
             Paging paging,
@@ -46,7 +46,14 @@ namespace VehicleApp.Repository
                 .Skip((paging.Page -1)  * paging.PageSize)
                 .Take(paging.PageSize);
 
-            return await query.ToListAsync();
+            try
+            {
+                return await query.ToListAsync();
+            }
+            catch(Exception ex)
+            {
+                throw new RepositoryException("Failed to load vehicle makes!", ex);
+            }
         }
     }
 }

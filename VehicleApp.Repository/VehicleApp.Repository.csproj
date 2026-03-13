@@ -61,10 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="GenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleMakeRepository.cs" />
+    <Compile Include="VehicleModelRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\VehicleApp.Common.csproj">
+      <Project>{e548f03c-8e33-4158-a943-1156970cf551}</Project>
+      <Name>VehicleApp.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VehicleApp.DAL\VehicleApp.DAL.csproj">
       <Project>{eb75bab4-4033-4b4f-b6c5-7b7befae625c}</Project>
       <Name>VehicleApp.DAL</Name>
