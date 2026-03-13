@@ -12,7 +12,7 @@ namespace VehicleApp.DAL
         public Guid VehicleMakeId { get; set; }
         public string Name { get; set; }
         public string Abrv { get; set; }
-        public virtual VehicleMakeEntity Make {  get; set; }
+        public virtual VehicleMakeEntity VehicleMake {  get; set; }
         
         public VehicleModelEntity()
         {

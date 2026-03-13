@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\BusinessException.cs" />
-    <Compile Include="Exceptions\RepositoryException.cs" />
-    <Compile Include="Exceptions\ServiceException.cs" />
+    <Compile Include="Exception\BusinessException.cs" />
+    <Compile Include="Exception\RepositoryException.cs" />
+    <Compile Include="Exception\ServiceException.cs" />
     <Compile Include="Filtering.cs" />
     <Compile Include="Paging.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
