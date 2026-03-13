@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace VehicleApp.Model
 {
-    public class Class1
+    public class User
     {
+        public Guid Id { get; set; }
+        public string UserName { get; set; }
     }
 }
