@@ -7,7 +7,7 @@ using VehicleApp.Common;
 using VehicleApp.DAL;
 using VehicleApp.Repository.Common;
 using System.Data.Entity;
-using Common.Exceptions;
+using VehicleApp.Common.Exceptions;
 
 namespace VehicleApp.Repository
 {

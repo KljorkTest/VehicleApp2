@@ -149,10 +149,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\VehicleApp.Common.csproj">
-      <Project>{e548f03c-8e33-4158-a943-1156970cf551}</Project>
-      <Name>VehicleApp.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\VehicleApp.Model.Common\VehicleApp.Model.Common.csproj">
       <Project>{3b98f148-88a1-41d8-b9bb-72f4f4d5f1f9}</Project>
       <Name>VehicleApp.Model.Common</Name>

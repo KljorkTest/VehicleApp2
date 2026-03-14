@@ -52,7 +52,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\VehicleApp.Common.csproj">
+    <ProjectReference Include="..\VehicleApp.Common\VehicleApp.Common.csproj">
       <Project>{e548f03c-8e33-4158-a943-1156970cf551}</Project>
       <Name>VehicleApp.Common</Name>
     </ProjectReference>
