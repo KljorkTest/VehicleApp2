@@ -25,7 +25,10 @@ namespace VehicleApp.Repository
             return await _dbSet.FindAsync(id);
         }
 
-
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync();
+        }
         public async Task<TEntity> CreateAsync (TEntity entity)
         {
             _dbSet.Add(entity);
