@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="GenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="UserVehicleRepository.cs" />
     <Compile Include="VehicleMakeRepository.cs" />
