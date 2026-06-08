@@ -11,9 +11,9 @@ namespace VehicleApp.Repository.Common
     public interface IUserVehicleRepository : IGenericRepository<UserVehicleEntity>
     {
         Task<IEnumerable<UserVehicleEntity>> GetByUserIdAsync(
-            Guid userId,
             Paging paging,
             Filtering filtering,
-            Sorting sorting);
+            Sorting sorting,
+            Guid userId);
     }
 }
